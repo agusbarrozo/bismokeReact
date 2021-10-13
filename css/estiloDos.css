@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#frontPage {
+  max-width: 100%;
+  height: 1000px;
+  background-image: url("../imagenes/fondoMain3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  resize: both; }
+
+#sectionFront {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  /*porque con 38% lo veo en el medio y no con 50%?*/ }
+
+#tituloFront {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: initial;
+  text-align: center;
+  color: whitesmoke; }
+
+#linkFront {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  list-style-type: none;
+  text-decoration: none; }
+
+h1 {
+  color: #0c3b2e;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px; }
+
+h2{
+  color: #6d9773;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; 
+}
+
+#tituloh2 {
+  color: #6d9773;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; }
+
+#tituloh3 {
+  color: #6d9773;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 10px; }
+
+#textoAbout {
+  color: #0c3b2e;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-transform: initial; }
+
+#linksImportantes {
+  color: #BA6617;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  list-style-type: none;
+  text-decoration: none; }
+
+body {
+  background-color: #eae7dc; }
+
+nav {
+  background-color: #99968b;
+  height: 86px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-style: normal; }
+
+footer {
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  padding-top: 50px; }
+
+#logoSocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #logoSocial li {
+    list-style-type: none; }
+
+.socials {
+  height: 40px; }
+
+a {
+  color: #0c3b2e;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: uppercase; }
+
+a:link {
+  color: #0c3b2e;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: uppercase; }
+
+a:visited {
+  color: #0c3b2e;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: uppercase; }
+
+a:hover {
+  color: #0c3b2e;
+  text-decoration: underline;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: uppercase; }
+
+/*SECCION ABOUT US*/
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#employees {
+  height: 400px;
+  width: 100%;
+  overflow: auto;
+  display: block;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#btnEmployees{
+  overflow: auto;
+  display: block;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+  #aboutUs {
+  display: grid;
+  grid-template-columns: 30% 68%;
+  grid-template-rows: 250px 250px 250px;
+  gap: 2% 2%;
+  grid-template-areas: "bismokeAbout textoAboutUno"
+ "whatWeDo textoAboutDos"
+ "ourPurpose textoAboutTres"; }
+
+#bismokeAbout {
+  grid-area: bismokeAbout;
+  width: 100%;
+  height: 250px;
+  text-align: end; }
+
+#whatWeDo {
+  grid-area: whatWeDo;
+  width: 100%;
+  height: 250px;
+  text-align: end; }
+
+#ourPurpose {
+  grid-area: ourPurpose;
+  width: 100%;
+  height: 250px;
+  text-align: end; }
+
+#textoAboutUno {
+  grid-area: textoAboutUno;
+  width: 100%;
+  height: 250px; }
+
+#textoAboutDos {
+  grid-area: textoAboutDos;
+  width: 100%;
+  height: 250px; }
+
+#textoAboutTres {
+  grid-area: textoAboutTres;
+  width: 100%;
+  height: 250px; }
+
+/* SECCION PRODUCTOS*/
+#grillaProductos {
+  display: grid;
+  grid-template-columns: 21.5% 26% 26% 26%;
+  grid-template-rows: 50px 500px 500px 500px;
+  gap: 0.5% 0.5%;
+  grid-template-areas: "navProd filtrosProd filtrosProd filtrosProd"
+ "navProd homeUno homeDos homeTres"
+ "navProd travelUno travelDos travelTres"
+ "navProd everydayUno everydayDos everydayTres"; }
+
+/* PARA HACER LA FOTO Y TEXTO ALINEADO DE CADA PRODUCTO 
+.cardsProductos{
+}
+*/
+#navProd {
+  grid-area: navProd;
+  background-color: #eae7dc;
+  width: 100%;
+  height: 1573px; }
+
+#filtrosProd {
+  grid-area: filtrosProd;
+  background-color: #eae7dc;
+  width: 100%;
+  height: 50px; }
+
+#homeUno {
+  grid-area: homeUno;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#homeDos {
+  grid-area: homeDos;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#homeTres {
+  grid-area: homeTres;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#travelUno {
+  grid-area: travelUno;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#travelDos {
+  grid-area: travelDos;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#travelTres {
+  grid-area: travelTres;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#everydayUno {
+  grid-area: everydayUno;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#everydayDos {
+  grid-area: everydayDos;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+#everydayTres {
+  grid-area: everydayTres;
+  background-image: linear-gradient(to bottom, lightgray, slategray);
+  width: 100%;
+  height: 500px; }
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* SECCION FIND A STORE */
+.fotoCiudad {
+  transition: all 2s; }
+
+.fotoCiudad:hover {
+  transform: scale(1.1, 1.1); }
+
+#storesFlex {
+  display: flex;
+  height: 1300px;
+  width: 100%;
+  /*background-color: brown;*/
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; }
+
+#filaUno {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*background-color: chartreuse;*/
+  height: 600px;
+  justify-content: space-around;
+  align-items: center; }
+
+#filaDos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*background-color: rgb(255, 0, 242);*/
+  height: 600px;
+  justify-content: space-around;
+  align-items: center; }
+
+#buenosAires {
+  /*background-color: cyan;*/
+  height: 500px;
+  width: 50%;
+  display: block;
+  text-align: center; }
+
+#barcelona {
+  /*background-color: darkmagenta;*/
+  height: 500px;
+  width: 50%;
+  display: block;
+  text-align: center; }
+
+#newYork {
+  /*background-color: rgb(139, 32, 0);*/
+  height: 500px;
+  width: 50%;
+  display: block;
+  text-align: center; }
+
+#hongKong {
+  /* background-color: rgb(125, 139, 0);*/
+  height: 500px;
+  width: 50%;
+  display: block;
+  text-align: center; }
+
+#botonesStore {
+  color: #0c3b2e;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+  list-style-type: none; }
+
+/* SECCION LEARN - PRODUCT GUIDANCE */
+.grilla {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 400px 400px;
+  gap: 7% 0%;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  grid-template-areas: "historiaUno historiaDos historiaTres"
+ "historiaCuatro historiaCinco historiaSeis";
+  width: 98.2%;
+  height: 100%; }
+
+.grilla div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.grilla__historiaUno {
+  grid-area: historiaUno;
+  background-color: white; }
+
+.grilla__historiaDos {
+  grid-area: historiaDos;
+  background-color: white; }
+
+.grilla__historiaTres {
+  grid-area: historiaTres;
+  background-color: white; }
+
+.grilla__historiaCuatro {
+  grid-area: historiaCuatro;
+  background-color: white; }
+
+.grilla__historiaCinco {
+  grid-area: historiaCinco;
+  background-color: white; }
+
+.grilla__historiaSeis {
+  grid-area: historiaSeis;
+  background-color: white; }
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: #003523; }
+
+label {
+  color: #08471b;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase; }
+
+p {
+  font-family: 'Lato', sans-serif; }
+
+.grilla__titulo {
+  font-family: 'Lato', sans-serif;
+  color: #08471b;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 35px; }
+
+.grilla__titulo--activo {
+  color: red; }
+
+.grilla__texto {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px; }
+
+.grilla__imagen {
+  height: 250px;
+  width: 100%;
+  background-color: #aa9a9a; }
+
+/*OTROS*/
+.otrosLinks {
+  color: #FFBA00; }
+
+button {
+  color: #0c3b2e;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+  list-style-type: none; }
+
+#textoComun {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px; }
+
+label {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px; }
